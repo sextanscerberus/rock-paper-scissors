@@ -58,7 +58,7 @@ main {
 }
 
 .user-item,
-.item-computer {
+#computer-choice button {
     transition: transform .5s;
 }
 
