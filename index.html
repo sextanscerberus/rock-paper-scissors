@@ -2,15 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, Paper, Scissors</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-
-    <script src="script.js"></script>
-</body>
-
+    <h1>Rock, Paper, Scissors!</h1>
+    <main>
+        <div id="user-choice" class="choice-container">
+            <h2>User</h2>
+            <img src="images/rock.png" class="item" />
+            <img src="images/paper.png" class="item" />
+            <img src="images/scissors.png" class="item" />
+            <p>Choose Your Fighter</p>
+        </div>
+        <div id="computer-choice" class="choice-container">
+            <h2>Computer</h2>
+            <img src="images/rock.png" class="item" />
+            <img src="images/paper.png" class="item" />
+            <img src="images/scissors.png" class="item" />
+            <p>Choose Your Fighter</p>
+        </div>
+    </main>
+    <section id="game-display">
+        <p id="match"></p>
+        <div id="result">0 - 0</div>
+        <button>New Game!</button>
+    </section>
+    <footer>
+        <p>
+            Created by
+            <a href="https://github.com/sextanscerberus">@sextanscerberus</a
+				>
+			</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
 </html>

@@ -3,4 +3,104 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    --dark-color: #5E6472;
+    --background-color: #FAF3DD;
+}
+
+body {
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+
+/* "header" styles */
+
+h1 {
+    margin-top: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.item {
+    width: 80px;
+    height: auto;
+}
+
+
+/* main section styles */
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 65px;
+}
+
+.choice-container {
+    padding: 30px;
+    border: 1px solid var(--dark-color);
+    border-radius: 5px;
+}
+
+.choice-container h2 {
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.item {
+    margin: 30px;
+    transition: transform .5s;
+}
+
+#user-choice .item:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+/* Game Display */
+
+#game-display {
+    font-weight: bold;
+}
+
+#match {
+    font-size: 2em;
+}
+
+#result {
+    visibility: hidden;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+#game-display button {
+    padding: 5px;
+}
+
+
+/* footer styles */
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFA69E;
+}
+
+footer a:visited {
+    text-decoration: none;
+}
+
+footer a:hover {
+    border-bottom: 1px solid #FFA69E;
 }
