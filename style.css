@@ -22,7 +22,8 @@ h1 {
     text-decoration: underline;
 }
 
-.item {
+.user-item,
+.item-computer {
     width: 80px;
     height: auto;
 }
@@ -42,18 +43,26 @@ main {
     border-radius: 5px;
 }
 
-.choice-container h2 {
+.user-container h2 {
     margin-bottom: 15px;
     font-style: italic;
     font-size: 1.5em;
 }
 
-.item {
+#user-choice button,
+#computer-choice button {
+    border: none;
+    background: none;
+    outline: none;
     margin: 30px;
+}
+
+.user-item,
+.item-computer {
     transition: transform .5s;
 }
 
-#user-choice .item:hover {
+.user-item:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
@@ -70,7 +79,6 @@ main {
 }
 
 #result {
-    visibility: hidden;
     font-size: 1.5em;
     margin: 20px;
 }

@@ -14,31 +14,31 @@
     <main>
         <div id="user-choice" class="choice-container">
             <h2>User</h2>
-            <img src="images/rock.png" class="item" />
-            <img src="images/paper.png" class="item" />
-            <img src="images/scissors.png" class="item" />
+            <button value="rock"><img src="images/rock.png" class="user-item" /></button>
+            <button value="paper"><img src="images/paper.png" class="user-item" /></button>
+            <button value="scissors"><img src="images/scissors.png" class="user-item" /></button>
             <p>Choose Your Fighter</p>
         </div>
         <div id="computer-choice" class="choice-container">
             <h2>Computer</h2>
-            <img src="images/rock.png" class="item" />
-            <img src="images/paper.png" class="item" />
-            <img src="images/scissors.png" class="item" />
+            <button value="rock"><img src="images/rock.png" class="item-computer" /></button>
+            <button value="paper"><img src="images/paper.png" class="item-computer" /></button>
+            <button value="scissors"><img src="images/scissors.png" class="item-computer" /></button>
             <p>Choose Your Fighter</p>
         </div>
     </main>
     <section id="game-display">
         <p id="match"></p>
-        <div id="result">0 - 0</div>
-        <button>New Game!</button>
+        <div id="result"></div>
+        <button id="reset-game">Reset Game!</button>
     </section>
     <footer>
         <p>
             Created by
-            <a href="https://github.com/sextanscerberus">@sextanscerberus</a
-				>
-			</p>
-		</footer>
-		<script src="script.js"></script>
-	</body>
+            <a href="https://github.com/sextanscerberus">@sextanscerberus</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
 </html>
