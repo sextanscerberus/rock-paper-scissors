@@ -3,6 +3,7 @@ const computerList = document.querySelectorAll("#computer-choice button");
 const resetGame = document.getElementById("reset-game");
 const score = document.getElementById("result");
 const versus = document.getElementById("match");
+const table = document.getElementById("table");
 
 let userOption;
 let userScore = 0,
@@ -14,8 +15,8 @@ userList.forEach((option) => {
         userOption = option.value;
         match(userOption);
         updateScore();
-        endOfGame();
-
+        newGameButton();
+        quit();
     });
 });
 
@@ -67,8 +68,8 @@ const match = (option) => {
     }
 };
 
-//This function print a message if you win or lose
-const endOfGame = () => {
+//This function print a message if you win or lose and changes the placeholder of the button
+const newGameButton = () => {
     if (userScore == 5) {
         versus.innerHTML = `WINNER WINNER CHICKEN DINNER! YOU WIN!!!!`;
         resetGame.innerHTML = "New Game?";
@@ -91,6 +92,13 @@ const reset = () => {
     updateScore();
     versus.innerHTML = "";
     resetGame.innerHTML = "Reset Game!";
+    userList.forEach((option) => option.removeAttribute('disabled'));
 };
 
-resetGame.addEventListener("click", reset());
+resetGame.addEventListener("click", reset);
+
+const quit = () => {
+    if (computerScore == 5 || userScore == 5) {
+        userList.forEach((option) => option.setAttribute("disabled", ""));
+    }
+};
